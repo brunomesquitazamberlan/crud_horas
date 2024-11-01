@@ -345,6 +345,16 @@ traitlets = ">=4"
 test = ["pytest"]
 
 [[package]]
+name = "credentials"
+version = "1.1"
+description = "Credential Manager"
+optional = false
+python-versions = "*"
+files = [
+    {file = "credentials-1.1-py2.py3-none-any.whl", hash = "sha256:6c2d4ffaac5ca264b5c7a4daf64306a571e5f01193ddbc9d5d2b79bd6650133e"},
+]
+
+[[package]]
 name = "cryptography"
 version = "43.0.1"
 description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
@@ -467,6 +477,21 @@ google-api-python-client = ">=1.7.8"
 google-cloud-firestore = {version = ">=2.9.1", markers = "platform_python_implementation != \"PyPy\""}
 google-cloud-storage = ">=1.37.1"
 pyjwt = {version = ">=2.5.0", extras = ["crypto"]}
+
+[[package]]
+name = "firestore"
+version = "0.0.8"
+description = "An offline-available ORM-like wrapper for Google Firestore Database"
+optional = false
+python-versions = "*"
+files = [
+    {file = "firestore-0.0.8-py3-none-any.whl", hash = "sha256:ba1b8f5fe98c2cb15c4c220878e5abf780be73880e87b889d7d5cb8b60df50c3"},
+    {file = "firestore-0.0.8.tar.gz", hash = "sha256:00003c07da7ac03b03126bb7bbcb62402f2bdaa6880241824eb8e0f05a497548"},
+]
+
+[package.dependencies]
+firebase-admin = "*"
+iso8601 = "*"
 
 [[package]]
 name = "gitdb"
@@ -885,6 +910,17 @@ parallel = ["ipyparallel"]
 qtconsole = ["qtconsole"]
 test = ["packaging", "pickleshare", "pytest", "pytest-asyncio (<0.22)", "testpath"]
 test-extra = ["curio", "ipython[test]", "matplotlib (!=3.2.0)", "nbformat", "numpy (>=1.23)", "pandas", "trio"]
+
+[[package]]
+name = "iso8601"
+version = "2.1.0"
+description = "Simple module to parse ISO 8601 dates"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "iso8601-2.1.0-py3-none-any.whl", hash = "sha256:aac4145c4dcb66ad8b648a02830f5e2ff6c24af20f4f482689be402db2429242"},
+    {file = "iso8601-2.1.0.tar.gz", hash = "sha256:6b1d3829ee8921c4301998c909f7829fa9ed3cbdac0d3b16af2d743aed1ba8df"},
+]
 
 [[package]]
 name = "jedi"
@@ -2376,4 +2412,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "cb2b2250740e201f852a30cff68da3478ade9eb671f66175b3d37c6366c7345b"
+content-hash = "dba665c6183f201aea7fc4a531414dd1fd31f56127cb2b0136097ce9a43474de"
